@@ -1,4 +1,4 @@
-#background{   
+#background{
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -23,4 +23,8 @@ header{
 form{
   margin-top: 6em;
   text-align: center;
+}
+
+#map-page{
+  margin: 0;
 }
