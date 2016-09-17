@@ -1,99 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
 
-    <title>
-      Artemis
-    </title>
-  </head>
-  <body id="map-page">
-    <header>
-        Artemis
-    </header>
-    <a href='index.html.erb'>
-      <img id="logo" src="../../../public/artemis_logo.jpg">
-    </a>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8,
-            styles: [
-              {
-                "featureType":"administrative",
-                "elementType":"labels.text.fill",
-                "stylers":[
-                  {"color":"#444444"}
-                ]
-              },{
-                "featureType":"landscape",
-                "elementType":"all",
-                "stylers":[
-                  {"color":"#f2f2f2"}
-                ]
-              },{
-                "featureType":"poi",
-                "elementType":"all",
-                "stylers":[
-                  {"visibility":"off"}
-                ]
-              },{
-                "featureType":"road",
-                "elementType":"all",
-                "stylers":[
-                  {"saturation":-100},
-                  {"lightness":45}
-                ]
-              },{
-                "featureType":"road.highway",
-                "elementType":"all",
-                "stylers":[
-                  {"visibility":"simplified"}
-                ]
-              },{
-                "featureType":"road.arterial",
-                "elementType":"labels.icon",
-                "stylers":[
-                  {"visibility":"off"}
-                ]
-              },{
-                "featureType":"transit",
-                "elementType":"all",
-                "stylers":[
-                  {"visibility":"off"}
-                ]
-              },{
-                "featureType":"water",
-                "elementType":"all",
-                "stylers":[
-                  {"color":"#ffd2a8"},
-                  {"visibility":"on"}
-                ]
-              },{
-                "featureType":"water",
-                "elementType":"geometry.fill",
-                "stylers":[
-                  {"visibility":"on"},
-                  {"hue":"#0094ff"}
-                ]
-              }
-            ]
-        });
-      }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lgSf_Boe4qAFQh5fpsW-FyeKdswYyS4&callback=initMap">
-    </script>
-    <div id="legend">
-      <div id="color-grad"></div>
-      <div id="color-labels"><div>Red</div><div>Yellow</div><div>Green</div></div>
-      <p>% Misdemeanor/Misc</p>
-      <p>% Drink/Drugs</p>
-      <p>% Theft</p>
-      <p>% Violent </p>
-    </div>
+  <title>
+    Artemis
+  </title>
+</head>
+<body id="map-page">
+  <header>
+    Artemis
+  </header>
+  <a href='index.html.erb'>
+    <img id="logo" src="../../../public/artemis_logo.jpg">
+  </a>
+  <div id="map"></div>
+  <script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: 37.77, lng: -122.42},
+      zoom: 15,
+      styles: [
+        {
+          "featureType": "all",
+          "elementType": "all",
+          "stylers": [
+            {
+              "hue": "#e7ecf0"
+            }
+          ]
+        },
+        {
+          "featureType": "all",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#b4c7d0"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -70
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            },
+            {
+              "saturation": -60
+            },
+            {
+              "color": "#0077b5"
+            }
+          ]
+        }
+      ]
+    });
+    var image = '../../../public/arrow_marker.png';
+    var beachMarker = new google.maps.Marker({
+      position: {lat: 37.77, lng: -122.42},
+      map: map,
+      icon: image
+    });
+  }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lgSf_Boe4qAFQh5fpsW-FyeKdswYyS4&callback=initMap">
+  </script>
+  <div id="legend">
+  <div id="color-grad"></div>
+  <div id="color-labels"><div>Red</div><div>Yellow</div><div>Green</div></div>
+  <p>% Misdemeanor/Misc</p>
+  <p>% Drink/Drugs</p>
+  <p>% Theft</p>
+  <p>% Violent </p>
+  </div>
   </body>
-</html>
+  </html>
