@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
-
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css">
+    <style>
+#map {
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+     }
+    </style>
     <title>
       Artemis
     </title>
   </head>
   <body id="map-page">
     <header>
-        Artemis
+      <img id="logo" src="">
+      Artemis
     </header>
-    <a href='index.html.erb'>
-      <img id="logo" src="../../../public/artemis_logo.jpg">
-    </a>
     <div id="map"></div>
     <script>
       function initMap() {
