@@ -12,5 +12,15 @@ header{
   font-size: 3.5em;
   color: white;
   padding: 15px;
+}
 
+#logo{
+  border:1px;
+  float:left;
+  margin:0;
+}
+
+form{
+  margin-top: 6em;
+  text-align: center;
 }
