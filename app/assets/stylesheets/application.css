@@ -28,3 +28,8 @@ form{
 #map-page{
   margin: 0;
 }
+
+#legend {
+  margin-left: 10px;
+  font-family: 'Helvetica';
+}
