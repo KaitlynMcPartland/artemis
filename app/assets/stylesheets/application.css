@@ -38,6 +38,9 @@ form button{
   margin-top: 8.5px;
   width:7.5em;
   font-size:1.25em;
+  border-radius: .5em;
+  color:white;
+  background-color: gray;
 }
 
 #map-page{
