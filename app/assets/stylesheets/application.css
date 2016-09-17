@@ -8,19 +8,34 @@
 header{
   background-color:#0077B5;
   text-align: center;
-  font-family: 'Helvetica', sans-serif;
   font-size: 3.5em;
+  margin-left:-5px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   color: white;
   padding: 15px;
 }
 
 #logo{
-  border:1px;
-  float:left;
-  margin:0;
+  border-radius: 50%;
+  height: 11%;
+  width: 6.5%;
+  left:10px;
+  top: 10px;
+  position: absolute;
 }
 
 form{
   margin-top: 6em;
   text-align: center;
+}
+
+form input{
+  width: 10em;
+  font-size:2.25em ;
+}
+
+form button{
+  margin-top: 8.5px;
+  width:7.5em;
+  font-size:1.25em;
 }
