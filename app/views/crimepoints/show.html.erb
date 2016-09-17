@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+
+    <title>
+      Artemis
+    </title>
+  </head>
+  <body id="map-page">
+    <header>
+        Artemis
+    </header>
+    <a href='index.html.erb'>
+      <img id="logo" src="../../../public/artemis_logo.jpg">
+    </a>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lgSf_Boe4qAFQh5fpsW-FyeKdswYyS4&callback=initMap">
+    </script>
+    <div id="legend">
+      <div id="color-grad"></div>
+      <div id="color-labels"><div>Red</div><div>Yellow</div><div>Green</div></div>
+      <p>% Misdemeanor/Misc</p>
+      <p>% Drink/Drugs</p>
+      <p>% Theft</p>
+      <p>% Violent </p>
+    </div>
+  </body>
+</html>
