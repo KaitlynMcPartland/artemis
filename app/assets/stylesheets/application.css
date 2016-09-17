@@ -1,5 +1,11 @@
 #background{   
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
   background-repeat: no-repeat;
-  background-size:cover; 
+  background-size:cover;
+  margin:0;
+}
+
+header{
+  background-color:blue;
+
 }
