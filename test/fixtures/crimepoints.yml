@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: 1.5
+  longitude: 1.5
+  drugdrink: 1.5
+  misdemean: 1.5
+  theft: 1.5
+  violent: 1.5
+  total: 1.5
+  drugdrinkct: 1
+  misdemeanct: 1
+  theftct: 1
+  violentct: 1
+  totalct: 1
+
+two:
+  latitude: 1.5
+  longitude: 1.5
+  drugdrink: 1.5
+  misdemean: 1.5
+  theft: 1.5
+  violent: 1.5
+  total: 1.5
+  drugdrinkct: 1
+  misdemeanct: 1
+  theftct: 1
+  violentct: 1
+  totalct: 1
