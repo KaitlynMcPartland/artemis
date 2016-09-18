@@ -25,6 +25,17 @@ header{
   position: absolute;
 }
 
+#search-container{
+  border-radius: 3em;
+  border-color:black;
+  background-color: #0077B5;
+  padding-bottom:1.5em;
+  opacity: .8;
+  margin-top:3em;
+  margin-left: 30em;
+  margin-right: 30em;
+}
+
 form{
   margin-top: 6em;
   text-align: center;
@@ -32,7 +43,7 @@ form{
 
 form input{
   width: 10em;
-  font-size:2.25em ;
+  font-size:2.25em;
 }
 
 form button{
