@@ -1,3 +1,7 @@
+body{
+  margin:0;
+}
+
 #background{
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
   background-repeat: no-repeat;
@@ -59,11 +63,6 @@ form button{
   color:white;
   background-color: #206589;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
-}
-
-#map-page{
-  background: url(<%= asset_data_uri '' %>)
-  margin: 0;
 }
 
 #map {
