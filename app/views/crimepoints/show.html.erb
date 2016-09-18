@@ -19,7 +19,7 @@
   function initMap() {
     var mapDiv = document.getElementById('map');
     var map = new google.maps.Map(mapDiv, {
-      center: {lat: 37.77, lng: -122.42},
+      center: {lat: <%=@latlng[0]%>, lng: <%=@latlng[1]%>},
       zoom: 15,
       styles: [
         {
@@ -98,7 +98,7 @@
     });
     var image = '../../../public/arrow_marker.png';
     var beachMarker = new google.maps.Marker({
-      position: {lat: 37.77, lng: -122.42},
+      position: {lat: <%=@latlng[0]%>, lng: <%=@latlng[1]%>},
       map: map,
       icon: image
     });
