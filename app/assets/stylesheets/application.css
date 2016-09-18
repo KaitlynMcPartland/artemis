@@ -1,5 +1,16 @@
-   #wrapper { position: relative; }
-   #over_map { position: absolute; bottom: 10px; left: 10px; z-index: 99; }
+   #wrapper { 
+    position: relative; 
+  }
+
+   #over_map { 
+    position: absolute; 
+    bottom: 170px; 
+    left: 150px;
+    right: 150px; 
+    z-index: 99; 
+    background-color: red;
+  }
+
    #background{
     background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
     background-repeat: no-repeat;
