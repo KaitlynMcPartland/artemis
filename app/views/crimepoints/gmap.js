@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="/../../assets/stylesheets/application.css">
-  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-  <script src="gmap.js"></script>
-
-  <title>Artemis</title>
-</head>
-
-<body id="map-page">
-  <header>
-    Artemis
-  </header>
-  <a href='/'><img id="logo" ></a>
-
-  <div id="map"></div>
-
-<script type="text/javascript">
-
 function initMap() {
 
       var center = new google.maps.LatLng(<%=@latlng[0]%>, <%=@latlng[1]%>)
@@ -8104,21 +8076,3 @@ function initMap() {
         icon: image
       });
     };
-
-</script>
-
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lgSf_Boe4qAFQh5fpsW-FyeKdswYyS4&libraries=visualization&callback=initMap">
-  </script>
-
-  <div id="legend">
-    <div id="color-grad"></div>
-    <div id="color-labels"><div>Red</div><div>Yellow</div><div>Green</div></div>
-    <p><%= @queried_crimepoint.misdemean %> Misdemeanor/Misc</p>
-    <p><%= @queried_crimepoint.drugdrink %> Drink/Drugs</p>
-    <p><%= @queried_crimepoint.theft %> Theft</p>
-    <p><%= @queried_crimepoint.violent %> Violent </p>
-    <p><%= @queried_crimepoint.total %> Total </p>
-  </div>
-</body>
-</html>
