@@ -50,9 +50,11 @@ form button{
 
 #map {
   display: block;
-  width: 100%;
-  height: 450px;
+  width: 97%;
+  height: 515px;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #legend {
