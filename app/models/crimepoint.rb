@@ -8,9 +8,7 @@ class Crimepoint < ApplicationRecord
 	end
 
 	def self.return_crimepoints
-		crimepoints = Crimepoint.first
-		p "%" * 100
-		p crimepoints
+		crimepoints = Crimepoint.all
 	end
 
 end

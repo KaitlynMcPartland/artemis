@@ -1,14 +1,15 @@
 class CrimepointsController < ApplicationController
-  def index
-    puts "Hello World"
-  end
+	def index
 
-  def show
+	end
 
-  	@location = params[:search]
-  	@latlng = Crimepoint.geolocation(@location)
-  	Crimepoint.return_crimepoints
+	def show
 
-  end
+		@location = params[:search]
+		@latlng = Crimepoint.geolocation(@location)
+		@all_crimepoints = Crimepoint.return_crimepoints
+		
+		render json: @all_crimepoints
+	end
 
 end
