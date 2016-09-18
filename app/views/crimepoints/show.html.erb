@@ -19,6 +19,8 @@
 
     function initMap() {
 
+      var center = new google.maps.LatLng(<%=@latlng[0]%>, <%=@latlng[1]%>)
+
       var styles = [
           {"featureType": "all",
             "elementType": "all",
@@ -387,7 +389,7 @@
       var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
 
       map = new google.maps.Map(document.getElementById('map'), {
-        center: sanFrancisco,
+        center: center,
         zoom: 13,
         styles: styles
       });
@@ -403,7 +405,7 @@
 
     var image = '../../../public/arrow_marker.png';
     var beachMarker = new google.maps.Marker({
-      position: sanFrancisco,
+      position: center,
       map: map,
       icon: image
     });
