@@ -5,6 +5,9 @@ class CrimepointsController < ApplicationController
 
   def show
 
-    # render json:
+  	@location = params[:search]
+  	@latlng = Crimepoint.geolocation(@location)
+
   end
+
 end
