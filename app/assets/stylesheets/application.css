@@ -238,7 +238,7 @@ form button{
 #floating-panel {
   position: absolute;
   top: 180px;
-  left: 25%;
+  left: 35%;
   z-index: 5;
   padding: 1px;
   border: none;
@@ -250,5 +250,8 @@ form button{
 
 #new-search{
   position:relative;
-  right:-40em;
+  right:-15em;
+  font-size:1.25em;
+  border-radius: .3em;
+  background-color: #fcfcfc;
 }
