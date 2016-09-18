@@ -5,7 +5,12 @@ class Crimepoint < ApplicationRecord
 		lat = response['results'][0]['geometry']['location']['lat']
 		lng = response['results'][0]['geometry']['location']['lng']
 		latlng = [lat, lng]
+	end
 
+	def self.return_crimepoints
+		crimepoints = Crimepoint.first
+		p "%" * 100
+		p crimepoints
 	end
 
 end
