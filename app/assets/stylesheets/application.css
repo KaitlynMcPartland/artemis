@@ -2,38 +2,38 @@ body{
   margin:0;
 }
 
-     #top_over_map { 
-    position: absolute; 
-    bottom: 188px;
-    padding-bottom: 4px;
-    padding-top: 4px; 
-    left: 170px;
-    right: 170px; 
-    z-index: 99; 
-    background-color: #D5DCDE;
-    color: #0077B5;
-    font-family: 'Helvetica','Roboto','sans-serif';
-    border-radius: 7px 7px 0px 0px;
-    -webkit-justify-content: space-between;
-    justify-content: space-around;
-    display: flex;
-  }
-   #bottom_over_map { 
-    position: absolute; 
-    bottom: 167px; 
-    left: 170px;
-    right: 170px; 
-    z-index: 99; 
-    background-color: #D5DCDE;
-    color: #0077B5;
-    font-family: 'Helvetica','Roboto','sans-serif';
-    border-radius: 0px 0px 7px 7px;
-    -webkit-justify-content: space-between;
-    justify-content: space-around;
-    display: flex;
-    padding-bottom: 4px;
-  }
+#top_over_map { 
+  position: absolute; 
+  bottom: 46px;
+  padding-bottom: 4px;
+  padding-top: 4px; 
+  left: 170px;
+  right: 170px; 
+  z-index: 99; 
+  background-color: #D5DCDE;
+  color: #0077B5;
+  font-family: 'Helvetica','Roboto','sans-serif';
+  border-radius: 7px 7px 0px 0px;
+  -webkit-justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+}
 
+#bottom_over_map { 
+  position: absolute; 
+  bottom: 25px; 
+  left: 170px;
+  right: 170px; 
+  z-index: 99; 
+  background-color: #D5DCDE;
+  color: #0077B5;
+  font-family: 'Helvetica','Roboto','sans-serif';
+  border-radius: 0px 0px 7px 7px;
+  -webkit-justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  padding-bottom: 4px;
+}
 
   #background{
     background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
