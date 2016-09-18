@@ -30,7 +30,19 @@
     <button onclick="changeOpacity()">Total</button>
   </div>
 
+
   <div id="map"></div>
+    <div id="top_over_map">
+  <div>low crime → high crime (0 → 10)</div>
+  </div>
+  <div id="bottom_over_map">
+  	<div><strong>All Crime: </strong><%= @queried_crimepoint.total.to_i %></div>
+  	<div><strong>Theft: </strong><%= @queried_crimepoint.theft.to_i %></div>
+  	<div><strong>Violent Crime: </strong><%= @queried_crimepoint.violent.to_i %>
+  	</div>
+  	<div><strong>Drugs/Alcohol: </strong><%= @queried_crimepoint.drugdrink.to_i %> </div>
+  	<div><strong>Misdemeanor: </strong><%= @queried_crimepoint.misdemean.to_i %></div>
+  </div>
 <script type="text/javascript">
 
 function initMap() {
