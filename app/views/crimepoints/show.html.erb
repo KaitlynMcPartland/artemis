@@ -43,8 +43,6 @@
   	<div><strong>Drugs/Alcohol: </strong><%= @queried_crimepoint.drugdrink.to_i %> </div>
   	<div><strong>Misdemeanor: </strong><%= @queried_crimepoint.misdemean.to_i %></div>
   </div>
-
-
 <script type="text/javascript">
 
 function initMap() {
@@ -8118,11 +8116,11 @@ function initMap() {
         radius: 40
       });
 
-      var image = 'public/arrow_marker.png';
+      // var image = 'public/arrow_marker.png';
       var beachMarker = new google.maps.Marker({
         position: center,
         map: map,
-        icon: image
+        icon: "<%= asset_path('arrow_marker.png')%>"
       });
     };
 
