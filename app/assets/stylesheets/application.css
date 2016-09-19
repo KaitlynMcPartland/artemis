@@ -186,15 +186,15 @@ header{
   position: absolute;
 }
 
+
 #search-container{
   border-radius: 3em;
   border-color:black;
   background-color: rgba(0, 119, 181,0.8);
-  padding-top:-1em;
   padding-bottom:1.5em;
   margin-top:15%;
-  margin-left: 20em;
-  margin-right: 20em;
+  width:50%;
+  margin-left:25%;
 }
 
 #slogan{
