@@ -190,36 +190,16 @@ header{
   border-radius: 3em;
   border-color:black;
   background-color: rgba(0, 119, 181,0.8);
+  padding-top:-1em;
   padding-bottom:1.5em;
-  margin-top:3em;
+  margin-top:15%;
   margin-left: 20em;
   margin-right: 20em;
-}
-
-form{
-  margin-top: 6em;
-  text-align: center;
 }
 
 #slogan{
   font-size:2em;
   color:white;
-  font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
-}
-
-form input{
-  width: 10em;
-  font-size:1.75em;
-  font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
-}
-
-form button{
-  margin-top: 8.5px;
-  width:7.5em;
-  font-size:1.25em;
-  border-radius: .5em;
-  color:white;
-  background-color: #206589;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
 }
 
