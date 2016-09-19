@@ -68,22 +68,21 @@ body{
 header{
   background-color:#0077B5;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 5.75em;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
   color: white;
   position:absolute;
   top: 0;
-  /*padding: 15px;*/
 }
 
 #logo{
   background-image: url("https://s-media-cache-ak0.pinimg.com/236x/25/a7/63/25a763fc13c8026aff68926ed7788719.jpg");
   background-size:99%;
   border-radius: 50%;
-  height: 11%;
-  width: 6.5%;
-  left:10px;
-  top: 10px;
+  height: 14.5%;
+  width: 10%;
+  left:25px;
+  top: 20px;
   position: absolute;
 }
 
