@@ -15,7 +15,7 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-[class*="col-"] {
+[class*="col-"]{
     float: left;
     padding: 15px;
     /*border: 1px solid red;*/
@@ -145,7 +145,7 @@ form button{
   margin-right: 20px;
 }
 
-#legend {
+#legend{
   display: block;
   height: 100px;
   margin-left: 10px;
@@ -154,19 +154,13 @@ form button{
   font-size: 12px;
 }
 
-#color-grad {
+#color-grad{
   background: linear-gradient(to right, red,yellow,green);
   height:40px;
   width:300px;
 }
 
-#arrow-image {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-}
-
-#color-labels {
+#color-labels{
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
