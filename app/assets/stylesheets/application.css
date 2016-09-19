@@ -183,10 +183,8 @@ form button{
   padding-left: 10px;
 }
 
-#new-search{
-  position:relative;
-  right:-15em;
-  font-size:1.25em;
-  border-radius: .3em;
-  background-color: #fcfcfc;
+#arrow-image{
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }
