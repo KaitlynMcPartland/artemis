@@ -139,13 +139,16 @@ form button{
   margin: 0;
 }
 
+
 #map{
   display: block;
+  position:absolute;
   width: 97%;
   height: 515px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 12.25%;
+  margin-left: 1.65%;
+  margin-right: 2.5%;
+  padding:0;
 }
 
 #legend{
