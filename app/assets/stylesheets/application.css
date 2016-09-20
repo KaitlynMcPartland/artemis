@@ -25,103 +25,6 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 400px) {
-  body{
-    font-size:20%;
-  }
-}
-
-
-@media only screen and (min-width: 500px) {
-  body{
-    font-size:35%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  body{
-    font-size:45%;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  body{
-    font-size:55%;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  body{
-    font-size:65%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  body{
-    font-size:75%;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  body{
-    font-size:85%;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  body{
-    font-size:95%;
-  }
-}
-
-@media only screen and (min-width: 1275px) {
-  body{
-    font-size:100%;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  body{
-    font-size:110%;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  body{
-    font-size:120%;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  body{
-    font-size:130%;
-  }
-}
-
-@media only screen and (min-width: 1700px) {
-  body{
-    font-size:140%;
-  }
-}
-
-@media only screen and (min-width: 1800px) {
-  body{
-    font-size:150%;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  body{
-    font-size:160%;
-  }
-}
-
-@media only screen and (min-width: 2000px) {
-  body{
-    font-size:170%;
-  }
-}
-
 #background{
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
   background-repeat: no-repeat;
@@ -287,4 +190,101 @@ form button{
   position: absolute;
   left: 50%;
   top: 45%;
+}
+
+@media only screen and (min-width: 400px) {
+  body{
+    font-size:20%;
+  }
+}
+
+
+@media only screen and (min-width: 500px) {
+  body{
+    font-size:35%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body{
+    font-size:45%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body{
+    font-size:55%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body{
+    font-size:65%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body{
+    font-size:75%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body{
+    font-size:85%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body{
+    font-size:95%;
+  }
+}
+
+@media only screen and (min-width: 1275px) {
+  body{
+    font-size:100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body{
+    font-size:110%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body{
+    font-size:120%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body{
+    font-size:130%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  body{
+    font-size:140%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  body{
+    font-size:150%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  body{
+    font-size:160%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body{
+    font-size:170%;
+  }
 }
