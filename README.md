@@ -1,24 +1,6 @@
-# README
+# Artemis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Team
+[@KaitlynMcPartland](https://github.com/KaitlynMcPartland) | [@alexpadraic] (https://github.com/alexpadraic) | [@mchaparr0] (https://github.com/mchaparr0) | [@benjaminhyw] (https://github.com/benjaminhyw) | [@amandawouldgo] (https://github.com/AmandaWouldGo)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![images](artemis-landing-page.png)
