@@ -1,137 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+    width: 100%;
+}
+
 body{
   margin:0;
 }
-
-#top_over_map { 
-  position: absolute; 
-  bottom: 46px;
-  padding-bottom: 4px;
-  padding-top: 4px; 
-  left: 170px;
-  right: 170px; 
-  z-index: 99; 
-  background-color: #D5DCDE;
-  color: #0077B5;
-  font-family: 'Helvetica','Roboto','sans-serif';
-  border-radius: 7px 7px 0px 0px;
-  -webkit-justify-content: space-between;
-  justify-content: space-around;
-  display: flex;
-}
-
-#bottom_over_map { 
-  position: absolute; 
-  bottom: 25px; 
-  left: 170px;
-  right: 170px; 
-  z-index: 99; 
-  background-color: #D5DCDE;
-  color: #0077B5;
-  font-family: 'Helvetica','Roboto','sans-serif';
-  border-radius: 0px 0px 7px 7px;
-  -webkit-justify-content: space-between;
-  justify-content: space-around;
-  display: flex;
-  padding-bottom: 4px;
-}
-
-  #background{
-    background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin:0;
-  }
-
-  header{
-    background-color:#0077B5;
-    text-align: center;
-    font-size: 3.5em;
-    font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
-    color: white;
-    padding: 15px;
-  }
-
-  #logo{
-    background-image: url("https://s-media-cache-ak0.pinimg.com/236x/25/a7/63/25a763fc13c8026aff68926ed7788719.jpg");
-    background-size:99%;
-    border-radius: 50%;
-    height: 11%;
-    width: 6.5%;
-    left:10px;
-    top: 10px;
-    position: absolute;
-  }
-
-  form{
-    margin-top: 6em;
-    text-align: center;
-  }
-
-  form input{
-    width: 10em;
-    font-size:2.25em ;
-  }
-
-  form button{
-    margin-top: 8.5px;
-    width:7.5em;
-    font-size:1.25em;
-    border-radius: .5em;
-    color:white;
-    background-color: #0077B5;
-  }
-
-  #map-page{
-    margin: 0;
-  }
-
-
-  #map {
-    display: block;
-    width: 97%;
-    height: 515px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  #legend {
-    display: block;
-    height: 100px;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-family: 'Helvetica';
-    font-size: 12px;
-  }
-
-  #color-grad {
-    background: linear-gradient(to right, red,yellow,green);
-    height:40px;
-    width:300px;
-  }
-
-  #color-labels {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    width: 300px;
-    height: 40px;
-  }
-
-
-  #floating-panel {
-    position: absolute;
-    top: 120px;
-    left: 25%;
-    z-index: 5;
-    padding: 1px;
-    border: none;
-    text-align: center;
-    font-family: 'Roboto','sans-serif';
-    line-height: 30px;
-    padding-left: 10px;
-  }
 
 #background{
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
@@ -146,6 +42,8 @@ header{
   font-size: 5.75em;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
   color: white;
+  position: absolute;
+  height:20%;
 }
 
 #logo{
@@ -154,35 +52,19 @@ header{
   border-radius: 50%;
   height: 14.5%;
   width: 10%;
-  left:25px;
-  top: 20px;
+  left:1.5%;
+  top: 2.5%;
   position: absolute;
 }
 
-#search-container{
-  border-radius: 3em;
-  border-color:black;
-  background-color: rgba(0, 119, 181,0.8);
-  padding-bottom:1.5em;
-  margin-top:3em;
-  margin-left: 20em;
-  margin-right: 20em;
-}
-
 form{
-  margin-top: 6em;
+  margin-top: 1.25em;
   text-align: center;
-}
-
-#slogan{
-  font-size:2em;
-  color:white;
-  font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
 }
 
 form input{
   width: 10em;
-  font-size:1.75em;
+  font-size:2.25em;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -192,20 +74,86 @@ form button{
   font-size:1.25em;
   border-radius: .5em;
   color:white;
-  background-color: #206589;
+  background-color: #0077B5;
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
 }
 
-#map {
-  display: block;
-  width: 97%;
-  height: 515px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+#search-container{
+  border-radius: 3em;
+  border-color:black;
+  background-color: rgba(0, 119, 181,0.8);
+  padding-bottom:2%;
+  margin-top:15%;
+  width:50%;
+  height:75%;
+  margin-left:25%;
 }
 
-#legend {
+#new-search{
+  position:relative;
+  right:-15em;
+  font-size:1.25em;
+  border-radius: .3em;
+  background-color: #fcfcfc;
+}
+
+#slogan{
+  font-size:2em;
+  color:white;
+  font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
+}
+
+#top_over_map{
+  position: absolute;
+  bottom: 46px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  left: 170px;
+  right: 170px;
+  z-index: 99;
+  background-color: #D5DCDE;
+  color: #0077B5;
+  font-family: 'Helvetica','Roboto','sans-serif';
+  border-radius: 7px 7px 0px 0px;
+  -webkit-justify-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  height:4em;
+}
+
+#bottom_over_map{
+  position: absolute;
+  bottom: 25px;
+  left: 170px;
+  right: 170px;
+  z-index: 99;
+  background-color: #D5DCDE;
+  color: #0077B5;
+  font-family: 'Helvetica','Roboto','sans-serif';
+  border-radius: 0px 0px 7px 7px;
+  -webkit-justify-content:space-between;
+  justify-content: space-around;
+  display: flex;
+  padding-bottom: 4px;
+}
+
+#map-page{
+  margin: 0;
+}
+
+
+#map{
+  display: block;
+  position:absolute;
+  width: 97%;
+  height: 515px;
+  margin-top: 12.25%;
+  margin-left: 1.65%;
+  margin-right: 2.5%;
+  padding:0;
+}
+
+#legend{
   display: block;
   height: 100px;
   margin-left: 10px;
@@ -214,19 +162,13 @@ form button{
   font-size: 12px;
 }
 
-#color-grad {
+#color-grad{
   background: linear-gradient(to right, red,yellow,green);
   height:40px;
   width:300px;
 }
 
-#arrow-image {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-}
-
-#color-labels {
+#color-labels{
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -235,10 +177,10 @@ form button{
   height: 40px;
 }
 
-#floating-panel {
+#floating-panel{
   position: absolute;
-  top: 180px;
-  left: 35%;
+  top: 165px;
+  left: 25%;
   z-index: 5;
   padding: 1px;
   border: none;
@@ -248,10 +190,8 @@ form button{
   padding-left: 10px;
 }
 
-#new-search{
-  position:relative;
-  right:-15em;
-  font-size:1.25em;
-  border-radius: .3em;
-  background-color: #fcfcfc;
+#arrow-image{
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }

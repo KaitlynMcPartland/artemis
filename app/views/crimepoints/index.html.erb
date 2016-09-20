@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
-  <link rel="stylesheet" type="text/css" href="/../../assets/stylesheets/application.css">
-  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/../../assets/javascripts/application.js"></script> -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="/../../assets/stylesheets/application.css">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 
-  <title>Artemis</title>
-</head>
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/../../assets/javascripts/application.js"></script> -->
 
-<body id="background">
+    <title>Artemis</title>
+  </head>
 
-  <header>
-    Artemis
-  </header>
+  <body id="background">
 
-  <a href='/'><img id="logo"></a>
-  <div id='search-container'>
-    <form action="/crimepoints/show">
-      <br>
-      <text id="slogan">
-        Helping You Find A Safe Place To Stay
+    <header class="col-12">
+      <text>
+        Artemis
       </text>
-      <br>
-      <br>
-      <input type="text" name="search" placeholder="Enter address...">
-      <br>
-      <button>Search</button>
-    </form>
-  </div>
-
-</body>
+    </header>
+    <a href='/'><img id="logo"></a>
+    <div id='search-container' class='col-6'>
+      <form action="/crimepoints/show">
+        <text id="slogan">
+          Helping You Find A Safe Place To Stay
+        </text>
+        <br>
+        <br>
+        <input type="text" name="search" placeholder="Enter address...">
+        <br>
+        <button>Search</button>
+      </form>
+    </div>
+  </body>
 </html>
