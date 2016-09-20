@@ -177,10 +177,9 @@ form button{
   height: 40px;
 }
 
-
 #floating-panel{
   position: absolute;
-  top: 120px;
+  top: 165px;
   left: 25%;
   z-index: 5;
   padding: 1px;
