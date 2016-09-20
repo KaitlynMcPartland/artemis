@@ -68,82 +68,83 @@
 
 function initMap() {
 
-      var center = new google.maps.LatLng(<%=@latlng[0]%>, <%=@latlng[1]%>)
+  var center = new google.maps.LatLng(<%=@latlng[0]%>, <%=@latlng[1]%>)
 
-      var styles = [
-                    {"featureType": "all",
-                    "elementType": "all",
-                    "stylers": [{"hue": "#e7ecf0"}]
-                    },
-                    {"featureType": "all",
-                    "elementType": "labels",
-                    "stylers": [{"visibility": "on"}]
-                    },
-                    {"featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{"visibility": "on"},
-                    {"color": "#b4c7d0"}]
-                    },
-                    {"featureType": "poi",
-                    "elementType": "all",
-                    "stylers": [{"visibility": "off"}]
-                    },
-                    {"featureType": "road",
-                    "elementType": "all",
-                    "stylers": [{"saturation": -70}]
-                    },
-                    {"featureType": "transit",
-                    "elementType": "all",
-                    "stylers": [{"visibility": "off"}]
-                    },
-                    {"featureType": "water",
-                    "elementType": "all",
-                    "stylers": [{"visibility": "simplified"},
-                    {"saturation": -60},
-                    {"color": "#0077b5"}]
-                    }]
+  var styles = [
+    {"featureType": "all",
+    "elementType": "all",
+    "stylers": [{"hue": "#e7ecf0"}]
+    },
+    {"featureType": "all",
+    "elementType": "labels",
+    "stylers": [{"visibility": "on"}]
+    },
+    {"featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [{"visibility": "on"},
+    {"color": "#b4c7d0"}]
+    },
+    {"featureType": "poi",
+    "elementType": "all",
+    "stylers": [{"visibility": "off"}]
+    },
+    {"featureType": "road",
+    "elementType": "all",
+    "stylers": [{"saturation": -70}]
+    },
+    {"featureType": "transit",
+    "elementType": "all",
+    "stylers": [{"visibility": "off"}]
+    },
+    {"featureType": "water",
+    "elementType": "all",
+    "stylers": [{"visibility": "simplified"},
+    {"saturation": -60},
+    {"color": "#0077b5"}]
+    }
+  ]
 
-      var gradient = [
-                      'rgba(0, 255, 255, 0)',
-                      'rgba(0, 255, 255, 1)',
-                      'rgba(0, 191, 255, 1)',
-                      'rgba(0, 127, 255, 1)',
-                      'rgba(0, 63, 255, 1)',
-                      'rgba(0, 0, 255, 1)',
-                      'rgba(0, 0, 223, 1)',
-                      'rgba(0, 0, 191, 1)',
-                      'rgba(0, 0, 159, 1)',
-                      'rgba(0, 0, 127, 1)',
-                      'rgba(63, 0, 91, 1)',
-                      'rgba(127, 0, 63, 1)',
-                      'rgba(191, 0, 31, 1)',
-                      'rgba(255, 0, 0, 1)'
-                      ]
-
-
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: center,
-        zoom: 14,
-        styles: styles
-      });
-
-      heatmap = new google.maps.visualization.HeatmapLayer({
-        data: totalData(),
-        // dissipating: false,
-        map: map,
-        gradient: gradient,
-        radius: 40
-      });
-
-      var beachMarker = new google.maps.Marker({
-        position: center,
-        map: map,
-        icon: "<%= asset_path('arrow_marker.png')%>"
-      });
+  var gradient = [
+    'rgba(0, 255, 255, 0)',
+    'rgba(0, 255, 255, 1)',
+    'rgba(0, 191, 255, 1)',
+    'rgba(0, 127, 255, 1)',
+    'rgba(0, 63, 255, 1)',
+    'rgba(0, 0, 255, 1)',
+    'rgba(0, 0, 223, 1)',
+    'rgba(0, 0, 191, 1)',
+    'rgba(0, 0, 159, 1)',
+    'rgba(0, 0, 127, 1)',
+    'rgba(63, 0, 91, 1)',
+    'rgba(127, 0, 63, 1)',
+    'rgba(191, 0, 31, 1)',
+    'rgba(255, 0, 0, 1)'
+  ]
 
 
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: center,
+    zoom: 14,
+    styles: styles
+    }
+  );
 
-    };
+  heatmap = new google.maps.visualization.HeatmapLayer({
+    data: totalData(),
+    // dissipating: false,
+    map: map,
+    gradient: gradient,
+    radius: 40
+    }
+  );
+
+  var beachMarker = new google.maps.Marker({
+    position: center,
+    map: map,
+    icon: "<%= asset_path('arrow_marker.png')%>"
+    }
+  );
+};
 
       function totalData() {
         return [
