@@ -85,6 +85,7 @@ form button{
   padding-bottom:2%;
   margin-top:15%;
   width:50%;
+  height:75%;
   margin-left:25%;
 }
 
@@ -117,6 +118,7 @@ form button{
   -webkit-justify-content: space-between;
   justify-content: space-around;
   display: flex;
+  height:4em;
 }
 
 #bottom_over_map{
