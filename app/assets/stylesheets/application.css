@@ -85,14 +85,6 @@ form button{
   margin-left:25%;
 }
 
-#new-search{
-  position:relative;
-  right:-15em;
-  font-size:1.25em;
-  border-radius: .3em;
-  background-color: #fcfcfc;
-}
-
 #slogan{
   font-size:2em;
   color:white;
@@ -173,6 +165,20 @@ div ul li{
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+}
+
+#new-search-div{
+  position:absolute;
+  top:25%;
+  right:10%;
+  z-index:5;
+}
+
+#new-search{
+  position:relative;
+  font-size:1.25em;
+  border-radius: .3em;
+  background-color: #fcfcfc;
 }
 
 #arrow-image{
