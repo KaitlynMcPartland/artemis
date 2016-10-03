@@ -86,19 +86,6 @@ form button{
 }
 
 
-#search-button{
-  position: absolute;
-  top: 180px;
-  left: 90%;
-  z-index: 5;
-  padding: 1px;
-  border: none;
-  text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
-}
-
 #slogan{
   font-size:2em;
   color:white;
@@ -183,9 +170,10 @@ div ul li{
 
 #new-search-div{
   position:absolute;
-  top:25%;
+  top:26%;
   right:10%;
   z-index:5;
+  border-radius: 3px;
 }
 
 #new-search{
