@@ -25,10 +25,6 @@
     width: 100%;
 }
 
-body{
-  margin:0;
-}
-
 #background{
   background-image: url("http://static.thousandwonders.net/Painted.ladies.original.18179.jpg");
   background-repeat: no-repeat;
@@ -53,7 +49,7 @@ header{
   height: 14.5%;
   width: 10%;
   left:1.5%;
-  top: 2.5%;
+  top: 3%;
   position: absolute;
 }
 
@@ -89,18 +85,6 @@ form button{
   margin-left:25%;
 }
 
-#search-button{
-  position: absolute;
-  top: 180px;
-  left: 90%;
-  z-index: 5;
-  padding: 1px;
-  border: none;
-  text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
-}
 
 #slogan{
   font-size:2em;
@@ -108,38 +92,27 @@ form button{
   font-family: 'ABeeZee', sans-serif, 'Helvetica', 'Arial', sans-serif;
 }
 
-#top_over_map{
-  position: absolute;
-  bottom: 46px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  left: 170px;
-  right: 170px;
-  z-index: 99;
-  background-color: #D5DCDE;
-  color: #0077B5;
-  font-family: 'Helvetica','Roboto','sans-serif';
-  border-radius: 7px 7px 0px 0px;
-  -webkit-justify-content: space-between;
-  justify-content: space-around;
-  display: flex;
-  height:4em;
+div ul{
+  list-style-type: none;
+  padding-left: 0;
 }
 
-#bottom_over_map{
-  position: absolute;
-  bottom: 25px;
-  left: 170px;
-  right: 170px;
-  z-index: 99;
+div ul li{
+  display:inline-block;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+#crime-rating{
+  width:60%;
+  position:absolute;
+  bottom:2.6%;
+  text-align:center;
+  left:20%;
   background-color: #D5DCDE;
   color: #0077B5;
+  border-radius:7px;
   font-family: 'Helvetica','Roboto','sans-serif';
-  border-radius: 0px 0px 7px 7px;
-  -webkit-justify-content:space-between;
-  justify-content: space-around;
-  display: flex;
-  padding-bottom: 4px;
 }
 
 #map-page{
@@ -151,7 +124,7 @@ form button{
   display: block;
   position:absolute;
   width: 97%;
-  height: 515px;
+  height: 75%;
   margin-top: 12.25%;
   margin-left: 1.65%;
   margin-right: 2.5%;
@@ -184,8 +157,8 @@ form button{
 
 #floating-panel{
   position: absolute;
-  top: 180px;
-  left: 37%;
+  top: 25%;
+  left: 25%;
   z-index: 5;
   padding: 1px;
   border: none;
@@ -195,8 +168,120 @@ form button{
   padding-left: 10px;
 }
 
+#new-search-div{
+  position:absolute;
+  top:26%;
+  right:10%;
+  z-index:5;
+  border-radius: 3px;
+}
+
+#new-search{
+  position:relative;
+  font-size:1.25em;
+  border-radius: .3em;
+  background-color: #fcfcfc;
+}
+
 #arrow-image{
   position: absolute;
   left: 50%;
   top: 45%;
+}
+
+@media only screen and (min-width: 400px) {
+  body{
+    font-size:20%;
+  }
+}
+
+
+@media only screen and (min-width: 500px) {
+  body{
+    font-size:35%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body{
+    font-size:45%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body{
+    font-size:55%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body{
+    font-size:65%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body{
+    font-size:75%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body{
+    font-size:85%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body{
+    font-size:95%;
+  }
+}
+
+@media only screen and (min-width: 1275px) {
+  body{
+    font-size:100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body{
+    font-size:110%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body{
+    font-size:120%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body{
+    font-size:130%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  body{
+    font-size:140%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  body{
+    font-size:150%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  body{
+    font-size:160%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body{
+    font-size:170%;
+  }
 }
